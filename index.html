@@ -32,6 +32,9 @@
         p {
             margin-bottom: 20px;
             line-height: 1.6;
+        }
+
+        strong {
             font-weight: bold;
         }
 
@@ -44,14 +47,46 @@
             background-color: #ddd;
             border-radius: 5px;
         }
+
+        #construction-icon {
+            font-size: 48px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        #loading-icon {
+            font-size: 24px;
+            color: #888;
+            margin-bottom: 20px;
+            animation: spin 5s infinite linear; /* Ajuste o valor da duração conforme desejado */
+        }
+
+        #useful-links {
+            font-size: 16px; /* Ajuste o tamanho da fonte conforme desejado */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <div id="container">
-        <p><strong>The website is temporarily unavailable for maintenance. Please try again later.</strong></p>
+        <div id="construction-icon">🚧</div>
+        <p><strong>Site under construction...</strong></p>
+        <div id="loading-icon">⌛</div>
 
+        <p id="useful-links">Useful Links:</p>
         <a href="https://www.instagram.com/granelmarble/" target="_blank">Visit the Instagram profile</a>
         <br>
         <a href="https://ugc.production.linktr.ee/5e1a0da2-2e77-4ef7-bba0-df73098a1731_Cata-logo-Materiais---Granel.pdf"
